@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <Button
+        android:id="@+id/loginpage"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:text="Log out" />
+
+    <TextView
+        android:id="@+id/textUpdateProfilePage"
+        android:layout_width="396dp"
+        android:layout_height="82dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/loginpage"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Please Update Your Profile"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="162dp"
+        android:text="UserName"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/editUpdateTextName"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textUpdateProfilePage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="13dp"
+        android:autofillHints="true"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Please enter your username"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="206dp"
+        android:text="Age"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editUpdateTextAge"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editUpdateTextName"
+        android:autofillHints="true"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Please enter you age" />
+
+    <TextView
+        android:id="@+id/textMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textage"
+        android:layout_marginTop="15dp"
+        android:text="Mobile"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editUpdateTextMobile"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editUpdateTextAge"
+        android:autofillHints="true"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Please enter you mobile number" />
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMobile"
+        android:layout_marginTop="39dp"
+        android:text="Password"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editUpdateTextPassword"
+        android:layout_width="315dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editUpdateTextMobile"
+        android:layout_alignParentEnd="true"
+        android:autofillHints="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Please enter you password" />
+
+    <TextView
+        android:id="@+id/textConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textPassword"
+        android:layout_marginTop="26dp"
+        android:text="Confirm \nPassword"
+        android:inputType="textMultiLine"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editUpdateTextConfirmPassword"
+        android:layout_width="315dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editUpdateTextPassword"
+        android:layout_alignParentEnd="true"
+        android:autofillHints="true"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Please confirm password" />
+
+    <Button
+        android:id="@+id/updateUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editUpdateTextConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Update User" />
+
+
+
+</RelativeLayout>

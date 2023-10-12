@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"  />
+
+    <Button
+        android:id="@+id/reviewDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewId"
+        android:text="Delete Review"
+        android:textSize="11sp" />
+    <Button
+        android:id="@+id/reviewUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewId"
+        android:layout_alignParentEnd="true"
+        android:text="Update Review"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/admincomment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@+id/reviewDelete"
+        android:textColor="@color/black"
+        android:textSize="20sp"  />
+
+    <EditText
+        android:id="@+id/admincommentbox"
+        android:layout_width="400dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/admincomment"
+        android:textSize="20sp"
+        android:hint="Enter Admin Comment"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/admincommentbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/admincommentbox"
+        android:text="Add Admin Comment"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/likebtn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/admincommentbtn"
+        android:text="Like"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/dislikebtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/admincommentbtn"
+        android:layout_marginStart="200dp"
+        android:text="DIslike"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/likecountView"
+        android:layout_width="78dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@id/likebtn"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:layout_toEndOf="@id/likebtn"
+        android:text="TextView"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/dislikecountView"
+        android:layout_width="77dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@id/dislikebtn"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:layout_toEndOf="@id/dislikebtn"
+        android:text="TextView"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

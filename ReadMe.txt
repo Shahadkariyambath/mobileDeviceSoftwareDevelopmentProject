@@ -1,0 +1,1 @@
+Please open the kotlin_code in android studio and paste the mobilesoftware folder, which is inside PHP_code folder in XAMP htdocs folder

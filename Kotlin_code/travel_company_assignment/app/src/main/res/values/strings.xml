@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Travel Company Review Page</string>
+    <!--<style name="TravelCompanyReviewPage" parent="Theme.AppCompat.NoActionBar"></style>-->
+</resources>

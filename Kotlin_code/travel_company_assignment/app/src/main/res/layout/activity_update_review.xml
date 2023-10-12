@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <Button
+        android:id="@+id/loginpage"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:text="Log out" />
+    <TextView
+        android:id="@+id/textUpdatePage"
+        android:layout_width="396dp"
+        android:layout_height="82dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/loginpage"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Please Update Your Review"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editUpdateTextReviewPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textUpdatePage"
+        android:ems="10"
+        android:minHeight="48dp"
+        android:hint="Please enter update place name"
+        android:autofillHints="true" />
+
+    <EditText
+        android:id="@+id/editUpdateTextReviewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/editUpdateTextReviewPlace"
+        android:autofillHints="true"
+        android:ems="10"
+        android:hint="Please enter update review"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/updateview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editUpdateTextReviewDetail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Update Review" />
+
+</RelativeLayout>
